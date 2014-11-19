@@ -5,14 +5,13 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>280ea612-08fb-4625-b26e-fc3b647ae8f6</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ProjectEuler</RootNamespace>
-    <AssemblyName>ProjectEuler</AssemblyName>
+    <ProjectGuid>813330ae-04c9-4847-a9fd-02484e2c41f5</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Problem3</RootNamespace>
+    <AssemblyName>Problem3</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>ProjectEuler</Name>
+    <Name>Problem3</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,9 +21,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\ProjectEuler.XML</DocumentationFile>
-    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>bin\Debug\Problem3.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,9 +30,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\ProjectEuler.XML</DocumentationFile>
-    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>bin\Release\Problem3.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MathNet.Numerics">
@@ -51,31 +46,9 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.fs" />
-    <None Include="App.config" />
+    <Compile Include="Problem3.fs" />
+    <None Include="Script.fsx" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Problem 2\Problem2.fsproj">
-      <Name>Problem2</Name>
-      <Project>{13e5909e-25e3-48e9-a9a8-445692c7c492}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Problem1\Problem1.fsproj">
-      <Name>Problem1</Name>
-      <Project>{c01f7c68-581b-4210-a49c-c9bc2b7f2d5a}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Problem3\Problem3.fsproj">
-      <Name>Problem3</Name>
-      <Project>{813330ae-04c9-4847-a9fd-02484e2c41f5}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Problem4\Problem4.fsproj">
-      <Name>Problem4</Name>
-      <Project>{6dea4111-f761-4d98-8663-f979b5e6de2f}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
