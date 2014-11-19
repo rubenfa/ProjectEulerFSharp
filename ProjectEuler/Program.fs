@@ -6,7 +6,7 @@ open System
 
 [<EntryPoint>]
 let main argv = 
-    Problem4.StartProblem
+    Problem6.StartProblem
     let result = Console.ReadKey(true)
     0 // return an integer exit code
 

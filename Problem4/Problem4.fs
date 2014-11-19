@@ -25,5 +25,6 @@ let Palindromes s e =
     |> List.max
 
 let StartProblem = 
+    printfn "%s" description
     printfn "%A" (Palindromes 100 999)
 
